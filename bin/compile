@@ -3,4 +3,4 @@
 build_dir="$1"
 
 cp -R "${build_dir}/Shared" "${build_dir}/Backend/Shared"
-sed 's/..\/Shared//g' 'Backend/Package.swift'
+sed 's/..\/Shared/Shared/g' '${build_dir}/Backend/Package.swift'
